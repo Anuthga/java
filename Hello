@@ -1,0 +1,15 @@
+public class Hello {
+public static void main (String args []){
+int x,y,z,sum,fact,remainder;
+x=1;
+y=2;
+z=3;
+sum=x+y+z;
+fact=x*y*z;
+remainder=z%y;
+System.out.println("The total is ="+sum);
+System.out.println("The Factorial of 3 is ="+fact);
+System.out.println("The remainder is ="+remainder);
+
+}
+}
