@@ -1,0 +1,38 @@
+class Student2
+{
+String Stno;
+int mark1;
+int mark2;
+int mark3;
+int total;
+double average;
+void getData(String Sno,int m1,int m2,int m3)
+{
+Stno=Sno;
+mark1=m1;
+mark2=m2;
+mark3=m3;
+}
+void calculations()
+{
+this.total=mark1+mark2+mark3;
+this.average=total/3;
+}
+void display()
+{
+System.out.println("Student No :"+Stno);
+System.out.println("total :"+total);
+System.out.println("Average :"+average);
+}
+}
+class Stud1
+{
+public static void main(String args[])
+{
+Student2 S1;
+S1=new Student2();
+S1.getData("234",66,78,98);
+S1.calculations();
+S1.display();
+}
+}
