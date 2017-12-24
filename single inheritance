@@ -1,0 +1,44 @@
+//single inheritance
+class Employee
+{
+int Empno;
+String EmpName;
+Employee(int no,String Name)
+{
+this . Empno=no;
+this . EmpName=Name;
+}
+
+void display()
+{
+System.out.println("Empno :"+Empno);
+System.out.println("EmpName :"+EmpName);
+}
+}
+
+class Manager extends Employee
+{
+double salary;
+Manager(int Empno,String EmpName,double salary)
+{
+
+super(Empno,EmpName);
+this.salary=salary;
+
+}
+void display()
+{
+super.display();
+System.out.println("salary :"+salary);
+}
+}
+class Test
+{
+	public static void main (String args[])
+	{
+		Manager m1;
+		m1=new Manager(111,"Kamal",100000);
+		m1.display();
+	}
+}
+
